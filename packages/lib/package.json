@@ -12,20 +12,29 @@
     "url": "git+https://github.com/wix/pro-gallery.git"
   },
   "sideEffects": false,
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "codesee/cjs/index.js",
+  "module": "codesee/esm/index.js",
   "files": [
-    "dist"
+    "codesee"
   ],
   "scripts": {
     "watch": "tsc -w",
     "start": "tsc -w",
     "build": "tsc && tsc -p tsconfig-esm.json",
+    "build:codesee": "./node_modules/.bin/babel ./src --out-dir ./codesee/cjs --extensions '.ts,.js' --source-maps inline",
     "test": "mocha --require ts-node/register test/*.spec.*",
     "lint": "eslint \"{src,test}/**/*.{js,jsx,ts}\"",
     "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-typescript": "^7.13.0",
+    "@codesee/babel-plugin-instrument": "^0.10.1",
+    "@codesee/tracker": "^0.10.1",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
     "chai": "^4.2.0",

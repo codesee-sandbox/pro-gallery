@@ -38,6 +38,7 @@ jspm_packages/
 
 # Distribution directories
 dist/
+codesee/
 target
 
 # Typescript v1 declaration files
