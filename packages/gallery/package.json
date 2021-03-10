@@ -52,6 +52,7 @@
     "@babel/core": "^7.13.10",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/plugin-transform-react-jsx": "^7.12.17",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-typescript": "^7.13.0",
     "@codesee/babel-plugin-instrument": "^0.10.1",
