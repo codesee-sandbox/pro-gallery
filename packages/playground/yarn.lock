@@ -10113,10 +10113,8 @@ pro-gallery-lib@3.0.9:
   dependencies:
     pro-layouts "3.0.9"
 
-pro-gallery@3.0.9:
+pro-gallery@../gallery:
   version "3.0.9"
-  resolved "https://registry.yarnpkg.com/pro-gallery/-/pro-gallery-3.0.9.tgz#f6ee18dd93c1e44e2af6e896fafa93bbc443f5b9"
-  integrity sha512-zjeigOUkwWvFdwODIzyd0jGuxqThqVUpn1zKuz4Sl7Qb90RczBpL1TbI2OJ+T4PKczezKFTbcOiWR4nKemFZVg==
   dependencies:
     "@vimeo/player" "2.8.2"
     hls.js "^0.14.12"
