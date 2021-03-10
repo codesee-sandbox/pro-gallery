@@ -103,7 +103,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.4.5", "@babel/core@^7.7.5", "@babel/core@^7.8.0":
+"@babel/core@^7.1.0", "@babel/core@^7.4.5", "@babel/core@^7.7.5":
   version "7.13.8"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.13.8.tgz#c191d9c5871788a591d69ea1dc03e5843a3680fb"
   integrity sha512-oYapIySGw1zGhEFRd6lzWNLWFX2s5dA/jm+Pw/+59ZdXtjyIuwlXbrId22Md0rgZVop+aVoqow2riXhBLNyuQg==
@@ -1204,46 +1204,46 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@codesee/babel-plugin-instrument@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@codesee/babel-plugin-instrument/-/babel-plugin-instrument-0.10.1.tgz#a3ce30f548f23ab4249ce54f78c8b907f0e1b479"
-  integrity sha512-A8kGZI0tbNpzZIM6Gk54vmlqAgE0q8AnTI66VkaqWLu1sHs/r3EGDREftCskzxGqa9KrgwWkYDQpH0WFQmmCOA==
+"@codesee/babel-plugin-instrument@0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@codesee/babel-plugin-instrument/-/babel-plugin-instrument-0.13.1.tgz#617f9230fb0f0b2127fa692489efa0b7f2cb1ea7"
+  integrity sha512-3w6PELbY7LsFc8vmbAFuBynIQqcJTe34nDaGcP0tlWT54A2MOrO5p2b/ZT61lTq5h/eVcN9gLllGepHBUm0jXQ==
   dependencies:
-    "@babel/core" "^7.8.0"
     "@babel/plugin-syntax-jsx" "^7.8.3"
     "@babel/plugin-transform-typescript" "^7.11.0"
     array.prototype.flatmap "^1.2.3"
     object-path "^0.11.4"
 
-"@codesee/batcher@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@codesee/batcher/-/batcher-0.10.1.tgz#62a45067a4a2708d9751ac8381635636c1944451"
-  integrity sha512-Ero8AE4NOn1xhxFIzi2pFIfbVfdj/SRDYHBm9G/hQ4QmmVvw9PmICuhbuGI8QRDhZMI0DD+2fyCyjXninfbr5g==
+"@codesee/batcher@^0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@codesee/batcher/-/batcher-0.13.1.tgz#0a2650e1a9ce704f7725ba30523ccb2d506cf24c"
+  integrity sha512-TrkEGZqjPwot72V7B3irRxxbT+5OCrjxVJ6X9sq0VCqrRTEPcxJ9VuqJ3GdOX1LuAf0XHyUUqgOiBNKjqxDj3w==
   dependencies:
+    "@codesee/shared-constants" "^0.13.1"
     superagent "^3.8.3"
     superagent-proxy "^2.0.0"
     urljoin "^0.1.5"
 
-"@codesee/serialization@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@codesee/serialization/-/serialization-0.10.1.tgz#7e5fcd94b1224c32894d2102cd5b4b17bc0d7a18"
-  integrity sha512-DDBVD044X5w6FhfQgTL+1F2GLpcBRV7cIpNen3674wOQ3EAPMJNqyEs2bNF4sLaoGIbl/Z+fhlkZiJKMmStRfw==
+"@codesee/serialization@^0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@codesee/serialization/-/serialization-0.13.1.tgz#fa7deee87ff1c18bdd4c274f3d151a5d5a890f90"
+  integrity sha512-DBCA7OcQ+gzScNIFthitq7ntmDkuc/Ls3+XjKJKoFdvUJLuoUG6N5dwEkDRzdpCLj02xy3Su9/xd4PIUCgPYWg==
   dependencies:
     base64-arraybuffer "^0.2.0"
 
-"@codesee/shared-constants@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@codesee/shared-constants/-/shared-constants-0.10.1.tgz#29ed79b91e570f9e60416bc33ce86ff09b68029e"
-  integrity sha512-iy+MlWzcIYvuSQVdtVMZcEhHG+RfQ15Fd4hwbYGrgSKKNhMCVV+xJ4nt3Wcg82IJ041D5YDHu/3GTdnLcBUP0g==
+"@codesee/shared-constants@^0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@codesee/shared-constants/-/shared-constants-0.13.1.tgz#e5e60118511434f51030e7dd04ef765a07011dd7"
+  integrity sha512-88ks9QS4ZBJAJfnIFehXqbcTyn1+V9WsdbUb/BQ/9p1jboNiw+vlrvKyob7RCx3slvGxyKJYbx3qfQFDv/y1XQ==
 
-"@codesee/tracker@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@codesee/tracker/-/tracker-0.10.1.tgz#4263ece307293bd1dbb2b5c37726691591c31b88"
-  integrity sha512-5WF5H1P7RzbllYkLB/OLzjpRi9ZrBjQAyUg0C9TdJ766ARDFpdm0UJWwa3hBNoUOHYyo311MjfWVLegw3xaaMA==
+"@codesee/tracker@0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@codesee/tracker/-/tracker-0.13.1.tgz#74eacda9d6d8f0dc108bcf47ab70446f2b8fa97f"
+  integrity sha512-La89PtAwnAV1+0q95HCsR8K1HsGDivkhm75C91m9XIiaRCsvG8EYNbfvbOvcq2EPaW8OWn+ExnBIyH277nzD/Q==
   dependencies:
-    "@codesee/batcher" "^0.10.1"
-    "@codesee/serialization" "^0.10.1"
-    "@codesee/shared-constants" "^0.10.1"
+    "@codesee/batcher" "^0.13.1"
+    "@codesee/serialization" "^0.13.1"
+    "@codesee/shared-constants" "^0.13.1"
     core-js "^3.6.5"
     node-fetch "^2.6.1"
     uuid "^8.3.2"

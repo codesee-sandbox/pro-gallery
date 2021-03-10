@@ -30,8 +30,8 @@
     "react-syntax-highlighter": "^10.3.0"
   },
   "devDependencies": {
-    "@codesee/babel-plugin-instrument": "0.10.1",
-    "@codesee/tracker": "0.10.1",
+    "@codesee/babel-plugin-instrument": "0.13.1",
+    "@codesee/tracker": "0.13.1",
     "@svgr/webpack": "^4.3.2",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.2.2",
@@ -138,7 +138,7 @@
       "react-app"
     ],
     "plugins": [
-      "@codesee/instrument"
+      ["@codesee/instrument", {"hosted": true}]
     ]
   },
   "homepage": "https://pro-gallery.surge.sh/"
