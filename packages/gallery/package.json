@@ -14,16 +14,18 @@
     "name": "Guy Sopher",
     "email": "guysopher@gmail.com"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "codesee/cjs/index.js",
+  "module": "codesee/esm/index.js",
   "files": [
-    "dist"
+    "codesee"
   ],
   "scripts": {
     "watch": "npm run start",
     "start": "tsc -w && npm run css-watch",
     "build": "tsc && tsc -p tsconfig-esm.json && npm run css-compile",
+    "build:codesee": "./node_modules/.bin/babel ./src --out-dir ./codesee/cjs --extensions '.ts,.js,.svg' --source-maps inline && npm run css-compile:codesee",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css src/components/styles/gallery.scss:dist/statics/main.css",
+    "css-compile:codesee": "sass --style expanded --source-map --embed-sources --no-error-css src/components/styles/gallery.scss:codesee/statics/main.css",
     "css-watch": "sass --watch src/components/styles/gallery.scss:dist/statics/main.css",
     "test": "jest --testPathIgnorePatterns '.*/e2e/.*.e2e.spec.js' --silent",
     "test:e2e-all": "jest --testPathPattern='.*/e2e/.*.e2e.spec.js'",
@@ -46,6 +48,14 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
+    "@codesee/babel-plugin-instrument": "^0.10.1",
+    "@codesee/tracker": "^0.10.1",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "chai": "^4.1.2",
