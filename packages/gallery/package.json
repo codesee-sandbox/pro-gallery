@@ -14,16 +14,15 @@
     "name": "Guy Sopher",
     "email": "guysopher@gmail.com"
   },
-  "main": "codesee/cjs/index.js",
-  "module": "codesee/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
-    "codesee"
+    "dist"
   ],
   "scripts": {
     "watch": "npm run start",
     "start": "tsc -w && npm run css-watch",
     "build": "tsc && tsc -p tsconfig-esm.json && npm run css-compile",
-    "build:codesee": "./node_modules/.bin/babel ./src --out-dir ./codesee/cjs --extensions '.ts,.js,.svg' --source-maps inline && npm run css-compile:codesee",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css src/components/styles/gallery.scss:dist/statics/main.css",
     "css-compile:codesee": "sass --style expanded --source-map --embed-sources --no-error-css src/components/styles/gallery.scss:codesee/statics/main.css",
     "css-watch": "sass --watch src/components/styles/gallery.scss:dist/statics/main.css",
@@ -55,8 +54,6 @@
     "@babel/plugin-transform-react-jsx": "^7.12.17",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-typescript": "^7.13.0",
-    "@codesee/babel-plugin-instrument": "^0.13.1",
-    "@codesee/tracker": "^0.13.1",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "chai": "^4.1.2",
