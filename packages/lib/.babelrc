@@ -6,6 +6,6 @@
   "plugins": [
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
-    ["@codesee/instrument", {hosted: true}]
+    ["@codesee/instrument", {"hosted": true}]
   ]
 }
